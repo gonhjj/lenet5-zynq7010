@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Jul  9 16:00:34 2024
+# Process ID: 27848
+# Current directory: D:/FPGA_project/lenet_7010/lenet_hls_010/lenet_hls_010/s_1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: D:/FPGA_project/lenet_7010/lenet_hls_010/lenet_hls_010/s_1/impl/ip/vivado.log
+# Journal file: D:/FPGA_project/lenet_7010/lenet_hls_010/lenet_hls_010/s_1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

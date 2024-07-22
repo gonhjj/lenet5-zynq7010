@@ -1,0 +1,76 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'lenet'" level="0">
+<item name = "Date">Fri Jul  5 11:26:11 2024
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">lenet_hls_010</item>
+<item name = "Solution">s_5</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.588, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">161063, 161063, 161063, 161063, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">4160, 4160, 130, -, -, 32, no</column>
+<column name=" + Loop 1.1">128, 128, 4, -, -, 32, no</column>
+<column name="- L_conv1_w_conv1_w1">23520, 23520, 7, 6, 1, 3920, yes</column>
+<column name="- Loop 3">11032, 11032, 394, -, -, 28, no</column>
+<column name=" + conv1_b">392, 392, 14, -, -, 28, no</column>
+<column name="  ++ conv1_b1">12, 12, 2, -, -, 6, no</column>
+<column name="- Loop 4">16884, 16884, 1206, -, -, 14, no</column>
+<column name=" + pool1_1">1204, 1204, 86, -, -, 14, no</column>
+<column name="  ++ pool1_2">84, 84, 14, -, -, 6, no</column>
+<column name="   +++ pool1_2.1">12, 12, 6, -, -, 2, no</column>
+<column name="    ++++ pool1_2.1.1">4, 4, 2, -, -, 2, no</column>
+<column name="- L_L_conv2_w3">40000, 40000, 17, 16, 1, 2500, yes</column>
+<column name="- L_conv2_b">1600, 1600, 16, 16, 1, 100, yes</column>
+<column name="- Loop 7">5660, 5660, 1132, -, -, 5, no</column>
+<column name=" + Loop 7.1">1130, 1130, 226, -, -, 5, no</column>
+<column name="  ++ pool2_1">224, 224, 14, -, -, 16, no</column>
+<column name="   +++ pool2_1.1">12, 12, 6, -, -, 2, no</column>
+<column name="    ++++ pool2_1.1.1">4, 4, 2, -, -, 2, no</column>
+<column name="- L_conv3_w_conv3_w1">24002, 24002, 11, 8, 1, 3000, yes</column>
+<column name="- Loop 9">510, 510, 34, -, -, 15, no</column>
+<column name=" + Loop 9.1">32, 32, 4, -, -, 8, no</column>
+<column name="- Loop 10">240, 240, 2, -, -, 120, no</column>
+<column name="- Loop 11">30408, 30408, 362, -, -, 84, no</column>
+<column name=" + Loop 11.1">360, 360, 3, -, -, 120, no</column>
+<column name="- Loop 12">168, 168, 2, -, -, 84, no</column>
+<column name="- Loop 13">2540, 2540, 254, -, -, 10, no</column>
+<column name=" + Loop 13.1">252, 252, 3, -, -, 84, no</column>
+<column name="- Loop 14">20, 20, 2, -, -, 10, no</column>
+<column name="- Loop 15">18, 18, 2, -, -, 9, no</column>
+<column name="- Loop 16">144, 144, 16, -, -, 9, no</column>
+<column name="- Loop 17">135, 135, 15, -, -, 9, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

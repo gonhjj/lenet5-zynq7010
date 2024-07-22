@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'lenet'" level="0">
+<item name = "Date">Tue Jul  9 15:58:47 2024
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">lenet_hls_010</item>
+<item name = "Solution">s_1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z010-clg400-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.614, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1744145, 1744145, 1744145, 1744145, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_softmax_fu_124">softmax, 301, 301, 301, 301, none</column>
+<column name="grp_conv1_fu_132">conv1, 436259, 436259, 436259, 436259, none</column>
+<column name="grp_conv2_fu_144">conv2, 1063242, 1063242, 1063242, 1063242, none</column>
+<column name="grp_conv3_fu_156">conv3, 199322, 199322, 199322, 199322, none</column>
+<column name="grp_pool1_fu_168">pool1, 16885, 16885, 16885, 16885, none</column>
+<column name="grp_pool2_fu_176">pool2, 5661, 5661, 5661, 5661, none</column>
+<column name="grp_fc1_fu_184">fc1, 20498, 20498, 20498, 20498, none</column>
+<column name="grp_fc2_fu_196">fc2, 1722, 1722, 1722, 1722, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">240, 240, 2, -, -, 120, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

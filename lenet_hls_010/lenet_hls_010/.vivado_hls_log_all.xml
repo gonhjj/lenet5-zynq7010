@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'lenet/input_r_Din_A' to 0." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:58:53.295+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'lenet/input_r_WEN_A' to 0." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:58:53.273+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'conv1/input_r_Din_A' to 0." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:58:48.190+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'conv1/input_r_WEN_A' to 0." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:58:48.172+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'lenet/input' to 'lenet/input_r' to avoid the conflict with HDL keywords or other object names." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:58:42.931+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] function.cpp:251: variable-indexed range selection may cause suboptimal QoR." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:58:39.714+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:56:03.873+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T15:56:03.814+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'lenet/input_r_Din_A' to 0." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:21.538+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'lenet/input_r_WEN_A' to 0." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:21.067+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('P2_out_V_load_2', function.cpp:158->lenet.cpp:51) on array 'P2_out_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'P2_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:10.154+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('C2_out_V_load_2', function.cpp:106->lenet.cpp:49) on array 'C2_out_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'C2_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:09.986+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('C2_out_V_load_18', function.cpp:89->lenet.cpp:49) on array 'C2_out_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'C2_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:09.836+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'lenet' (Loop: L_L_conv2_w3): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('C2_out_V_addr_13_write_ln89', function.cpp:89->lenet.cpp:49) of variable 'trunc_ln708_8', function.cpp:89->lenet.cpp:49 on array 'C2_out_V' and 'load' operation ('C2_out_V_load_12', function.cpp:89->lenet.cpp:49) on array 'C2_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:09.219+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'lenet' (Loop: L_L_conv2_w3): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('C2_out_V_addr_13_write_ln89', function.cpp:89->lenet.cpp:49) of variable 'trunc_ln708_8', function.cpp:89->lenet.cpp:49 on array 'C2_out_V' and 'load' operation ('C2_out_V_load_12', function.cpp:89->lenet.cpp:49) on array 'C2_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:09.152+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'store' operation ('C1_out_V_addr_1_write_ln25', function.cpp:25->lenet.cpp:47) of variable 'trunc_ln708_s', function.cpp:25->lenet.cpp:47 on array 'C1_out_V' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'C1_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:09.080+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'lenet' (Loop: L_conv1_w_conv1_w1): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('C1_out_V_addr_1_write_ln25', function.cpp:25->lenet.cpp:47) of variable 'trunc_ln708_s', function.cpp:25->lenet.cpp:47 on array 'C1_out_V' and 'load' operation ('C1_out_V_load', function.cpp:25->lenet.cpp:47) on array 'C1_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:08.966+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'lenet' (Loop: L_conv1_w_conv1_w1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'store' operation ('C1_out_V_addr_1_write_ln25', function.cpp:25->lenet.cpp:47) of variable 'trunc_ln708_s', function.cpp:25->lenet.cpp:47 on array 'C1_out_V' and 'load' operation ('C1_out_V_load', function.cpp:25->lenet.cpp:47) on array 'C1_out_V'." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:08.934+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'lenet/input' to 'lenet/input_r' to avoid the conflict with HDL keywords or other object names." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:26:07.819+0800" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] function.cpp:251: variable-indexed range selection may cause suboptimal QoR." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:25:48.570+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-484] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:23:11.257+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-483] The 'config_sdx -optimization_level' command is deprecated and will be removed in a future release. Use 'config_export -vivado_optimization_level' as its replacement." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:23:11.055+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fpext_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T16:01:08.087+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fexp_6_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T16:01:04.455+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fdiv_10_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T16:01:00.966+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fadd_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;&#xA;create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 400.805 ; gain = 41.523" projectName="lenet_hls_010" solutionName="s_1" date="2024-07-09T16:00:57.252+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fpext_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:28:59.271+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fexp_6_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:28:55.069+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fdiv_10_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:28:51.941+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'lenet_ap_fadd_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;&#xA;create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:24 . Memory (MB): peak = 400.273 ; gain = 41.039" projectName="lenet_hls_010" solutionName="s_5" date="2024-07-05T11:28:48.542+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,17 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../lenet.cpp in debug mode
+   Compiling ../../../../function.cpp in debug mode
+   Generating csim.exe
+out[0] = 1.43353e-042
+out[1] = 0.0031156
+out[2] = 0.0031156
+out[3] = 0.0031156
+out[4] = 0.0031156
+out[5] = 0.0031156
+out[6] = 0.0031156
+out[7] = 0.0031156
+out[8] = 0.975075
+out[9] = 0.0031156
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

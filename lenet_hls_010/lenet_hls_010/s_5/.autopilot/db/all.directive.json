@@ -1,0 +1,174 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "lenet",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "s_axilite",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "return",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "bundle",
+                "value": "Crtl"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "conv1",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "Kw_1",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "complete",
+                "value": "",
+                "positionalBoolean": "type"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lenet",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INLINE",
+            "option": [{
+                "name": "region",
+                "value": "",
+                "positionalBoolean": "1"
+              }]
+          }
+        },
+        {
+          "functionName": "conv1",
+          "label": "conv1_w1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "conv2",
+          "label": "conv2_w3",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "conv3",
+          "label": "conv3_w1",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "conv2",
+          "label": "conv2_b",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "lenet",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ALLOCATION",
+            "option": [
+              {
+                "name": "instances",
+                "value": "mul",
+                "positionalBoolean": "4"
+              },
+              {
+                "name": "limit",
+                "value": "65"
+              },
+              {
+                "name": "operation",
+                "value": "",
+                "positionalBoolean": "type"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lenet",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "in",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lenet",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "Cout",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "lenet",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "bram",
+                "value": "",
+                "positionalBoolean": "mode"
+              },
+              {
+                "name": "port",
+                "value": "input",
+                "positionalBoolean": "4"
+              }
+            ]
+          }
+        }
+      ]
+    }]}

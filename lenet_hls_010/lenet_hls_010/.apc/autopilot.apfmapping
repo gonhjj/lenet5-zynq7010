@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="param.h" path="D:\git--share\lenet_hls_010\param.h"/>
+    <originFiles name="lenet.cpp" path="D:\git--share\lenet_hls_010\lenet.cpp"/>
+    <originFiles name="function.cpp" path="D:\git--share\lenet_hls_010\function.cpp"/>
+    <originFiles name="fc_w.h" path="D:\git--share\lenet_hls_010\fc_w.h"/>
+    <originFiles name="fc_b.h" path="D:\git--share\lenet_hls_010\fc_b.h"/>
+    <originFiles name="fc1_w.h" path="D:\git--share\lenet_hls_010\fc1_w.h"/>
+    <originFiles name="fc1_b.h" path="D:\git--share\lenet_hls_010\fc1_b.h"/>
+    <originFiles name="c3_w.h" path="D:\git--share\lenet_hls_010\c3_w.h"/>
+    <originFiles name="c3_b.h" path="D:\git--share\lenet_hls_010\c3_b.h"/>
+    <originFiles name="c2_w.h" path="D:\git--share\lenet_hls_010\c2_w.h"/>
+    <originFiles name="c2_b.h" path="D:\git--share\lenet_hls_010\c2_b.h"/>
+    <originFiles name="c1_w.h" path="D:\git--share\lenet_hls_010\c1_w.h"/>
+    <originFiles name="c1_b.h" path="D:\git--share\lenet_hls_010\c1_b.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.cpp" path="D:\git--share\lenet_hls_010\test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

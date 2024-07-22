@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="lenet" xd:componentRef="lenet" xd:initiationInterval="161064" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_Crtl" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="input[]" xd:originalName="input" xd:direction="in" xd:interfaceRef="input_r_PORTA" xd:busTypeRef="bram" xd:arraySize="1024" xd:dataWidth="32"/>
+  <xd:arg xd:name="Cout[]" xd:originalName="Cout" xd:direction="inout" xd:interfaceRef="Cout_PORTA" xd:busTypeRef="bram" xd:arraySize="10" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="161063" xd:worst-case="161063" xd:average-case="161063"/>
+  <xd:resourceEstimates xd:LUT="11588" xd:FF="7962" xd:BRAM="59" xd:DSP="74"/>
+</xd:acceleratorMap>

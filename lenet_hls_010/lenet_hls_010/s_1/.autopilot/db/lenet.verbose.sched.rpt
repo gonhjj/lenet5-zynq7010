@@ -1,0 +1,262 @@
+
+
+================================================================
+== Vivado HLS Report for 'lenet'
+================================================================
+* Date:           Tue Jul  9 15:58:47 2024
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        lenet_hls_010
+* Solution:       s_1
+* Product family: zynq
+* Target device:  xc7z010-clg400-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.614|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +---------+---------+---------+---------+---------+
+    |      Latency      |      Interval     | Pipeline|
+    |   min   |   max   |   min   |   max   |   Type  |
+    +---------+---------+---------+---------+---------+
+    |  1744145|  1744145|  1744145|  1744145|   none  |
+    +---------+---------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  240|  240|         2|          -|          -|   120|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 17
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 13 
+12 --> 11 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (0.00ns)   --->   "call fastcc void @conv1([1024 x float]* %input_r, [4704 x i16]* @C1_out_V) nounwind" [lenet.cpp:47]   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 19 [1/2] (0.00ns)   --->   "call fastcc void @conv1([1024 x float]* %input_r, [4704 x i16]* @C1_out_V) nounwind" [lenet.cpp:47]   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 20 [2/2] (0.00ns)   --->   "call fastcc void @pool1([1176 x i16]* @P1_out_V) nounwind" [lenet.cpp:48]   --->   Operation 20 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @pool1([1176 x i16]* @P1_out_V) nounwind" [lenet.cpp:48]   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 22 [2/2] (0.00ns)   --->   "call fastcc void @conv2([1600 x i16]* @C2_out_V) nounwind" [lenet.cpp:49]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 23 [1/2] (0.00ns)   --->   "call fastcc void @conv2([1600 x i16]* @C2_out_V) nounwind" [lenet.cpp:49]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 24 [2/2] (0.00ns)   --->   "call fastcc void @pool2([400 x i16]* @P2_out_V) nounwind" [lenet.cpp:50]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 25 [1/2] (0.00ns)   --->   "call fastcc void @pool2([400 x i16]* @P2_out_V) nounwind" [lenet.cpp:50]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 26 [2/2] (0.00ns)   --->   "call fastcc void @conv3([120 x i16]* @C3_out_V_0_0) nounwind" [lenet.cpp:51]   --->   Operation 26 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.46>
+ST_10 : Operation 27 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([1024 x float]* %input_r) nounwind, !map !114"   --->   Operation 27 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([10 x float]* %Cout) nounwind, !map !120"   --->   Operation 28 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([6 x i8]* @lenet_str) nounwind"   --->   Operation 29 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([10 x float]* %Cout, [5 x i8]* @p_str16, i32 0, i32 0, [1 x i8]* @p_str117, i32 0, i32 0, [1 x i8]* @p_str117, [1 x i8]* @p_str117, [1 x i8]* @p_str117, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str117, [1 x i8]* @p_str117) nounwind" [lenet.cpp:6]   --->   Operation 30 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([1024 x float]* %input_r, [5 x i8]* @p_str16, i32 0, i32 0, [1 x i8]* @p_str117, i32 0, i32 0, [1 x i8]* @p_str117, [1 x i8]* @p_str117, [1 x i8]* @p_str117, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str117, [1 x i8]* @p_str117) nounwind" [lenet.cpp:6]   --->   Operation 31 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str218, i32 0, i32 0, [1 x i8]* @p_str117, i32 0, i32 0, [5 x i8]* @p_str319, [1 x i8]* @p_str117, [1 x i8]* @p_str117, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str117, [1 x i8]* @p_str117) nounwind" [lenet.cpp:6]   --->   Operation 32 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 33 [1/2] (0.00ns)   --->   "call fastcc void @conv3([120 x i16]* @C3_out_V_0_0) nounwind" [lenet.cpp:51]   --->   Operation 33 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 34 [1/1] (0.46ns)   --->   "br label %0" [function.cpp:189->lenet.cpp:52]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.46>
+
+State 11 <SV = 10> <Delay = 2.77>
+ST_11 : Operation 35 [1/1] (0.00ns)   --->   "%m_0_i = phi i7 [ 0, %codeRepl1 ], [ %m, %1 ]"   --->   Operation 35 'phi' 'm_0_i' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 36 [1/1] (1.06ns)   --->   "%icmp_ln189 = icmp eq i7 %m_0_i, -8" [function.cpp:189->lenet.cpp:52]   --->   Operation 36 'icmp' 'icmp_ln189' <Predicate = true> <Delay = 1.06> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.06> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 37 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 120, i64 120, i64 120) nounwind"   --->   Operation 37 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 38 [1/1] (1.31ns)   --->   "%m = add i7 %m_0_i, 1" [function.cpp:192->lenet.cpp:52]   --->   Operation 38 'add' 'm' <Predicate = true> <Delay = 1.31> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.31> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 39 [1/1] (0.00ns)   --->   "br i1 %icmp_ln189, label %reshape.exit, label %1" [function.cpp:189->lenet.cpp:52]   --->   Operation 39 'br' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 40 [1/1] (0.00ns)   --->   "%zext_ln191 = zext i7 %m_0_i to i64" [function.cpp:191->lenet.cpp:52]   --->   Operation 40 'zext' 'zext_ln191' <Predicate = (!icmp_ln189)> <Delay = 0.00>
+ST_11 : Operation 41 [1/1] (0.00ns)   --->   "%C3_out_V_0_0_addr = getelementptr [120 x i16]* @C3_out_V_0_0, i64 0, i64 %zext_ln191" [function.cpp:191->lenet.cpp:52]   --->   Operation 41 'getelementptr' 'C3_out_V_0_0_addr' <Predicate = (!icmp_ln189)> <Delay = 0.00>
+ST_11 : Operation 42 [2/2] (2.77ns)   --->   "%C3_out_V_0_0_load = load i16* %C3_out_V_0_0_addr, align 2" [function.cpp:191->lenet.cpp:52]   --->   Operation 42 'load' 'C3_out_V_0_0_load' <Predicate = (!icmp_ln189)> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 120> <RAM>
+ST_11 : Operation 43 [2/2] (0.00ns)   --->   "call fastcc void @fc1([84 x i16]* @FC1_out_V) nounwind" [lenet.cpp:53]   --->   Operation 43 'call' <Predicate = (icmp_ln189)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 5.54>
+ST_12 : Operation 44 [1/2] (2.77ns)   --->   "%C3_out_V_0_0_load = load i16* %C3_out_V_0_0_addr, align 2" [function.cpp:191->lenet.cpp:52]   --->   Operation 44 'load' 'C3_out_V_0_0_load' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 120> <RAM>
+ST_12 : Operation 45 [1/1] (0.00ns)   --->   "%Re_out_V_addr = getelementptr [120 x i16]* @Re_out_V, i64 0, i64 %zext_ln191" [function.cpp:191->lenet.cpp:52]   --->   Operation 45 'getelementptr' 'Re_out_V_addr' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 46 [1/1] (2.77ns)   --->   "store i16 %C3_out_V_0_0_load, i16* %Re_out_V_addr, align 2" [function.cpp:191->lenet.cpp:52]   --->   Operation 46 'store' <Predicate = true> <Delay = 2.77> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 2.77> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 16> <Depth = 120> <RAM>
+ST_12 : Operation 47 [1/1] (0.00ns)   --->   "br label %0" [function.cpp:189->lenet.cpp:52]   --->   Operation 47 'br' <Predicate = true> <Delay = 0.00>
+
+State 13 <SV = 11> <Delay = 0.00>
+ST_13 : Operation 48 [1/2] (0.00ns)   --->   "call fastcc void @fc1([84 x i16]* @FC1_out_V) nounwind" [lenet.cpp:53]   --->   Operation 48 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 14 <SV = 12> <Delay = 0.00>
+ST_14 : Operation 49 [2/2] (0.00ns)   --->   "call fastcc void @fc2([10 x i16]* @FC2_out_V) nounwind" [lenet.cpp:54]   --->   Operation 49 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 13> <Delay = 0.00>
+ST_15 : Operation 50 [1/2] (0.00ns)   --->   "call fastcc void @fc2([10 x i16]* @FC2_out_V) nounwind" [lenet.cpp:54]   --->   Operation 50 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 14> <Delay = 0.00>
+ST_16 : Operation 51 [2/2] (0.00ns)   --->   "call fastcc void @softmax([10 x float]* %Cout) nounwind" [lenet.cpp:55]   --->   Operation 51 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 17 <SV = 15> <Delay = 0.00>
+ST_17 : Operation 52 [1/2] (0.00ns)   --->   "call fastcc void @softmax([10 x float]* %Cout) nounwind" [lenet.cpp:55]   --->   Operation 52 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_17 : Operation 53 [1/1] (0.00ns)   --->   "ret void" [lenet.cpp:56]   --->   Operation 53 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+ <State 9>: 0ns
+The critical path consists of the following:
+
+ <State 10>: 0.466ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('m') with incoming values : ('m', function.cpp:192->lenet.cpp:52) [34]  (0.466 ns)
+
+ <State 11>: 2.77ns
+The critical path consists of the following:
+	'phi' operation ('m') with incoming values : ('m', function.cpp:192->lenet.cpp:52) [34]  (0 ns)
+	'getelementptr' operation ('C3_out_V_0_0_addr', function.cpp:191->lenet.cpp:52) [41]  (0 ns)
+	'load' operation ('C3_out_V_0_0_load', function.cpp:191->lenet.cpp:52) on array 'C3_out_V_0_0' [42]  (2.77 ns)
+
+ <State 12>: 5.54ns
+The critical path consists of the following:
+	'load' operation ('C3_out_V_0_0_load', function.cpp:191->lenet.cpp:52) on array 'C3_out_V_0_0' [42]  (2.77 ns)
+	'store' operation ('store_ln191', function.cpp:191->lenet.cpp:52) of variable 'C3_out_V_0_0_load', function.cpp:191->lenet.cpp:52 on array 'Re_out_V' [44]  (2.77 ns)
+
+ <State 13>: 0ns
+The critical path consists of the following:
+
+ <State 14>: 0ns
+The critical path consists of the following:
+
+ <State 15>: 0ns
+The critical path consists of the following:
+
+ <State 16>: 0ns
+The critical path consists of the following:
+
+ <State 17>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
