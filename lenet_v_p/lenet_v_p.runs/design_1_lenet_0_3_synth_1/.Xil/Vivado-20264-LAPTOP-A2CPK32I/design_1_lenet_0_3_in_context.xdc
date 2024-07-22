@@ -1,0 +1,6 @@
+create_clock -period 10.000 [get_ports -no_traverse Cout_Clk_A]
+create_clock -period 10.000 [get_ports -no_traverse input_r_Clk_A]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 10.000 [get_ports -no_traverse -quiet Cout_Clk_A]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 10.000 [get_ports -no_traverse -quiet ap_clk]
+set_property -quiet CLOCK_PERIOD_OOC_TARGET 10.000 [get_ports -no_traverse -quiet input_r_Clk_A]
+set_property -quiet IS_IP_OOC_CELL TRUE [get_cells -of [get_ports -no_traverse -quiet Cout_Addr_A[0]]]
